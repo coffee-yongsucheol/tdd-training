@@ -10,7 +10,7 @@ public class MultiplicationTest {
         Dollar product = five.times(2);
         Assertions.assertEquals(new Dollar(10), product);
         product = five.times(3);
-        Assertions.assertEquals(15, product.amount);
+        Assertions.assertEquals(new Dollar(15), product);
     }
 
     @Test
