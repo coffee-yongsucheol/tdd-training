@@ -1,8 +1,5 @@
 ## tdd를 통한 자바 수련
 
-
-
-
 ## 스터디 멤버
 <table>
   <tr>
@@ -15,3 +12,5 @@
   </tr>
   
 </table>
+
+앞으로 진행될 커밋 방식 참고 레포 : https://github.com/tobyilee/study-refactoring/commits/main/
