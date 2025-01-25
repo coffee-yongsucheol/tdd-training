@@ -1,9 +1,9 @@
 package com.example.tddtraining;
 
-public class Dollor {
+public class Dollar {
     public int amount;
 
-    public Dollor(int i) {
+    public Dollar(int i) {
         amount = i;
     }
 
