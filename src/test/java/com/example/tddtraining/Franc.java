@@ -1,7 +1,6 @@
 package com.example.tddtraining;
 
-public class Franc {
-    private int amount;
+public class Franc extends Money {
 
     public Franc(int i) {
         this.amount = i;
@@ -15,8 +14,4 @@ public class Franc {
         return this.amount;
     }
 
-    public boolean equals(Object object) {
-        Franc franc = (Franc) object;
-        return amount == franc.amount;
-    }
 }
