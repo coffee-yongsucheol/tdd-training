@@ -1,6 +1,6 @@
 package com.example.tddtraining;
 
-public class Money {
+abstract class Money {
     protected int amount;
 
     public boolean equals(Object object){
@@ -8,4 +8,10 @@ public class Money {
         return amount == money.amount
                && getClass().equals(money.getClass()) ;
     }
+
+    static Dollar dollar(int amount){
+        return new Dollar(amount);
+    }
+
+    abstract Money times(int multiplier);
 }
