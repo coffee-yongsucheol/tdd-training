@@ -17,7 +17,7 @@ public class MultiplicationTest {
         Assertions.assertFalse(Money.dollar(5).equals(Money.dollar(6)));
         Assertions.assertTrue(new Franc(5).equals(new Franc(5)));
         Assertions.assertFalse(new Franc(5).equals(new Franc(6)));
-        Assertions.assertFalse(new Franc(5).equals(new Dollar(6)));
+        Assertions.assertFalse(new Franc(5).equals(Money.dollar(6)));
     }
 
     @Test
