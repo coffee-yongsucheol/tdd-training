@@ -14,4 +14,8 @@ abstract class Money {
     }
 
     abstract Money times(int multiplier);
+
+    public static Franc franc(int amount) {
+        return new Franc(amount);
+    }
 }
