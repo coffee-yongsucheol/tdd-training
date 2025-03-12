@@ -13,8 +13,8 @@ public class MultiplicationTest {
 
     @Test
     void testEquality() {
-        Assertions.assertTrue(new Dollar(5).equals(new Dollar(5)));
-        Assertions.assertFalse(new Dollar(5).equals(new Dollar(6)));
+        Assertions.assertTrue(Money.dollar(5).equals(Money.dollar(5)));
+        Assertions.assertFalse(Money.dollar(5).equals(Money.dollar(6)));
         Assertions.assertTrue(new Franc(5).equals(new Franc(5)));
         Assertions.assertFalse(new Franc(5).equals(new Franc(6)));
         Assertions.assertFalse(new Franc(5).equals(new Dollar(6)));
