@@ -15,7 +15,7 @@ abstract class Money {
                && getClass().equals(money.getClass()) ;
     }
 
-    static Money dollar(int amount){
+    public static Money dollar(int amount){
         return new Dollar(amount, "USD");
     }
 
