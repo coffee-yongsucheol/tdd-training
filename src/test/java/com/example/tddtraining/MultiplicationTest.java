@@ -27,5 +27,11 @@ public class MultiplicationTest {
         Assertions.assertEquals(Money.franc(15), five.times(3));
     }
 
+    @Test
+    void testCurrency() {
+        Assertions.assertEquals("USD", Money.dollar(1).currency());
+        Assertions.assertEquals("CHF", Money.franc(1).currency());
+    }
+
 
 }
