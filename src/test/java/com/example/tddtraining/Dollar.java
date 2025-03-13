@@ -2,8 +2,8 @@ package com.example.tddtraining;
 
 public class Dollar extends Money {
 
-    public Dollar(int i) {
-        amount = i;
+    public Dollar(int amount) {
+        this.amount = amount;
     }
 
     public Dollar times(int multiplier) {
