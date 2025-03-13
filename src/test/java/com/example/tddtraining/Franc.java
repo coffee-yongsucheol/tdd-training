@@ -2,8 +2,9 @@ package com.example.tddtraining;
 
 public class Franc extends Money {
 
-    public Franc(int i) {
-        this.amount = i;
+    public Franc(int amount) {
+        this.amount = amount;
+
     }
 
     public Franc times(int multiplier) {
