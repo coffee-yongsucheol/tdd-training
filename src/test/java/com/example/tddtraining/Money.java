@@ -27,4 +27,8 @@ abstract class Money {
 
     abstract String currency();
 
+    public String toString() {
+        return amount + " " + currency;
+    }
+
 }
