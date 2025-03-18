@@ -18,12 +18,6 @@ public class MultiplicationTest {
         Assertions.assertFalse(Money.franc(5).equals(Money.dollar(5)));
     }
 
-    @Test
-    void testFrancMultiplication() {
-        Money five = Money.franc(5);
-        Assertions.assertEquals(Money.franc(10), five.times(2));
-        Assertions.assertEquals(Money.franc(15), five.times(3));
-    }
 
     @Test
     void testCurrency() {
