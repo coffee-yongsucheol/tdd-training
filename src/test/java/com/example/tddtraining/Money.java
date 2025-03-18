@@ -12,14 +12,13 @@ public class Money {
     public boolean equals(Object object){
         Money money = (Money) object;
         return amount == money.amount
-               && getClass().equals(money.getClass()) ;
+               && currency().equals(money.currency()) ;
     }
 
     public static Money dollar(int amount){
         return new Money(amount, "USD");
     }
 
-//    abstract Money times(int multiplier);
 
     Money times(int multiplier) {
         return new Money(this.amount * multiplier, this.currency);
@@ -29,7 +28,6 @@ public class Money {
         return new Money(amount, "CHF");
     }
 
-//    abstract String currency();
     String currency() {
         return currency;
     }
