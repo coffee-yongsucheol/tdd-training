@@ -1,6 +1,6 @@
 package com.example.tddtraining;
 
-abstract class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
@@ -16,16 +16,23 @@ abstract class Money {
     }
 
     public static Money dollar(int amount){
-        return new Dollar(amount, "USD");
+        return new Money(amount, "USD");
     }
 
-    abstract Money times(int multiplier);
+//    abstract Money times(int multiplier);
+
+    Money times(int multiplier) {
+        return new Money(this.amount * multiplier, this.currency);
+    }
 
     public static Money franc(int amount) {
-        return new Franc(amount, "CHF");
+        return new Money(amount, "CHF");
     }
 
-    abstract String currency();
+//    abstract String currency();
+    String currency() {
+        return currency;
+    }
 
     public String toString() {
         return amount + " " + currency;
