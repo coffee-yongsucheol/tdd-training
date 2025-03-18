@@ -3,6 +3,7 @@ package com.example.tddtraining;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 public class MultiplicationTest {
     @Test
     void testMultiplication() {
@@ -27,9 +28,11 @@ public class MultiplicationTest {
 
     @Test
     void testSimpleAddition() {
-        Money sum = Money.dollar(5).plus(Money.dollar(5));
-        Assertions.assertEquals(Money.dollar(10), sum);
-
+        Money five = Money.dollar(5);
+        Expression sum = five.plus(five);
+        Bank bank = new Bank();
+        Money reduced = bank.reduce(sum, "USD");
+        Assertions.assertEquals(Money.dollar(10), reduced);
     }
 
 }
