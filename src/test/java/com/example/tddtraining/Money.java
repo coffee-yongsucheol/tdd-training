@@ -36,4 +36,7 @@ public class Money {
         return amount + " " + currency;
     }
 
+    public Money plus(Money addene) {
+        return new Money(this.amount + addene.amount, this.currency);
+    }
 }
