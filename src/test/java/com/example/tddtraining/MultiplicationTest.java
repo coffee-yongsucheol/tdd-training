@@ -18,7 +18,6 @@ public class MultiplicationTest {
         Assertions.assertTrue(Money.franc(5).equals(Money.franc(5)));
         Assertions.assertFalse(Money.franc(5).equals(Money.franc(6)));
         Assertions.assertFalse(Money.franc(5).equals(Money.dollar(6)));
-        Assertions.assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
     }
 
     @Test
@@ -32,6 +31,11 @@ public class MultiplicationTest {
     void testCurrency() {
         Assertions.assertEquals("USD", Money.dollar(1).currency());
         Assertions.assertEquals("CHF", Money.franc(1).currency());
+    }
+
+    @Test
+    void testDifferentClassEquality() {
+        Assertions.assertTrue(new Money(10, "CHF").equals(new Franc(10, "CHF")));
     }
 
 
