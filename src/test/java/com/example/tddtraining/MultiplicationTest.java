@@ -35,4 +35,14 @@ public class MultiplicationTest {
         Assertions.assertEquals(Money.dollar(10), reduced);
     }
 
+    @Test
+    public void testPlusReturnsSum() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum) result;
+
+        Assertions.assertEquals(five, sum.augend);
+        Assertions.assertEquals(five, sum.addend);
+    }
+
 }
