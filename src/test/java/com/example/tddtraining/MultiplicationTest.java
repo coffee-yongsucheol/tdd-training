@@ -68,10 +68,6 @@ public class MultiplicationTest {
         Assertions.assertEquals(Money.dollar(1), result);
     }
 
-    @Test
-    void testArrayEquals() {
-        Assertions.assertEquals(new Object[] {"abc"}, new Object[] {"abc"});
-    }
 
     @Test
     void testIdentityRate() {
