@@ -73,4 +73,9 @@ public class MultiplicationTest {
         Assertions.assertEquals(new Object[] {"abc"}, new Object[] {"abc"});
     }
 
+    @Test
+    void testIdentityRate() {
+        Assertions.assertEquals(1, new Bank().rate("USD", "USD"));
+    }
+
 }
