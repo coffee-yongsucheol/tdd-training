@@ -1,10 +1,10 @@
 package com.example.tddtraining;
 
 public class Sum implements Expression {
-    public Money augend;
-    public Money addend;
+    public Expression augend;
+    public Expression addend;
 
-    Sum(Money augend, Money addend) {
+    Sum(Expression augend, Expression addend) {
         this.augend = augend;
         this.addend = addend;
     }
